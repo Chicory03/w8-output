@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Base */
 body {
-    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif";
     font-size: 15px;
     line-height: 1.5;
     color: #333333c9; 
@@ -72,7 +72,7 @@ h1 {
 }
 .form-group {
     margin-bottom: 10px;
-  }
+}
 button {
     all: unset;
     width: 230px;
@@ -88,7 +88,7 @@ button {
 }
 button:hover {
     background-color: rgba(149, 109, 228, 0.178);
-  }
+}
 input {
     width: 230px;
     padding: 5px;
