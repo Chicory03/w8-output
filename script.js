@@ -21,10 +21,24 @@ password.addEventListener("click", ()=> {
      password.value = PasswordAgain;
 });
 
-email.addEventListener("DOMContentLoaded", () => {
-　　　email.value = EmailAgain;
+
+// ページ読み込み時にローカルストレージから値を取得してセットする
+document.addEventListener("DOMContentLoaded", () => {
+     const EmailAgain = localStorage.getItem("key-1");
+     const PasswordAgain = localStorage.getItem("key-2");
+     if (EmailAgain) {
+          email.value = EmailAgain;
+     }
+     if (PasswordAgain) {
+          password.value = PasswordAgain;
+     }
 });
 
-password.addEventListener("DOMContentLoaded", ()=> {
-     password.value = PasswordAgain;
-});
+
+// document.addEventListener("DOMContentLoaded", () => {
+// 　　　email.value = EmailAgain;
+// });
+
+// document.addEventListener("DOMContentLoaded", ()=> {
+     // password.value = PasswordAgain;
+// });
